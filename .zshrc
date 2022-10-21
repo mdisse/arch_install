@@ -22,6 +22,7 @@ alias sudo='sudo -E'
 alias pip='sudo pip'
 alias ls='ls --color=auto'
 alias pacman='sudo pacman'
+alias podman='sudo podman'
 
 #some alias for shortcuts in my sexy system
 alias git commit='git commit -a'

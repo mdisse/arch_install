@@ -7,7 +7,6 @@ sudo pacman -Syu --noconfirm --needed \
 	vim \
 	ranger \
 	fzf \
-	alacritty
 
 # First install aur helper, if not installed 
 if [ ! -d "/opt/yay-git" ]; then 
@@ -30,6 +29,9 @@ if [ ! -d "/home/$USER/.oh-my-zsh" ]; then
 fi
 cp .zshrc ~/.zshrc
 
-# Setup alacritty
-mkdir -p ~/.config/alacritty
-cp ./alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
+# Install docker etc 
+sudo pacman -Syu --noconfirm --needed \
+	docker \
+	podman \
+	kubectl \
+	code
