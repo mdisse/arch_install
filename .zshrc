@@ -2,7 +2,7 @@ export ZSH="/home/$USER/.oh-my-zsh"
 ZSH_THEME="agnoster"
 unsetopt correct 
 
-plugins=(git fzf)
+plugins=(git fzf zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
