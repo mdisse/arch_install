@@ -6,7 +6,8 @@ sudo pacman -Syu --noconfirm --needed \
 	base-devel \
 	vim \
 	ranger \
-	fzf
+	fzf \
+	alacritty
 
 # First install aur helper, if not installed 
 if [ ! -d "/opt/yay-git" ]; then 
@@ -23,6 +24,12 @@ cp .vimrc ~/.vimrc
 vim +'PlugInstall --sync' +qa
 
 # Setup zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+if [ ! -d "/home/$USER/.oh-my-zsh" ]; then 
+	sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+	git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+fi
 cp .zshrc ~/.zshrc
+
+# Setup alacritty
+mkdir -p ~/.config/alacritty
+cp ./alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
