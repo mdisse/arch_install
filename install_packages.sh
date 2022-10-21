@@ -4,7 +4,9 @@
 sudo pacman -Syu --noconfirm --needed \
 	git \
 	base-devel \
-	vim 
+	vim \
+	ranger \
+	fzf
 
 # First install aur helper, if not installed 
 if [ ! -d "/opt/yay-git" ]; then 
@@ -15,7 +17,11 @@ if [ ! -d "/opt/yay-git" ]; then
 	makepkg -si --noconfirm
 fi 
 
-# Setup my vimrc
+# Setup vimrc
 yay -S vim-plug --noconfirm --needed 
 cp .vimrc ~/.vimrc
 vim +'PlugInstall --sync' +qa
+
+# Setup zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+cp .zshrc ~/.zshrc
