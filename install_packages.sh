@@ -29,9 +29,9 @@ if [ ! -d "/home/$USER/.oh-my-zsh" ]; then
 fi
 cp .zshrc ~/.zshrc
 
-# Install docker etc 
+# Install further pacman packages
 sudo pacman -Syu --noconfirm --needed \
 	docker \
 	podman \
 	kubectl \
-	code
+	code \
