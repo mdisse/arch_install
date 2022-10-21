@@ -6,7 +6,7 @@ sudo pacman -Syu --noconfirm --needed \
 	base-devel \
 	vim 
 
-# First install yay if not installed 
+# First install aur helper, if not installed 
 if [ ! -d "/opt/yay-git" ]; then 
 	cd /opt
 	sudo git clone https://aur.archlinux.org/yay-git.git
@@ -14,3 +14,8 @@ if [ ! -d "/opt/yay-git" ]; then
 	cd yay-git
 	makepkg -si --noconfirm
 fi 
+
+# Setup my vimrc
+yay -S vim-plug --noconfirm --needed 
+cp .vimrc ~/.vimrc
+vim +'PlugInstall --sync' +qa
