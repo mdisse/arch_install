@@ -7,6 +7,7 @@ sudo pacman -Syu --noconfirm --needed \
 	vim \
 	ranger \
 	fzf \
+	jq \
 
 # First install aur helper, if not installed 
 if [ ! -d "/opt/yay-git" ]; then 
