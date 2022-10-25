@@ -19,7 +19,6 @@ source $ZSH/oh-my-zsh.sh
  fi
 
 alias sudo='sudo -E'
-alias pip='sudo pip'
 alias ls='ls --color=auto'
 alias pacman='sudo pacman'
 alias podman='sudo podman'
