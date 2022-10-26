@@ -9,6 +9,8 @@ sudo pacman -Syu --noconfirm --needed \
 	fzf \
 	jq \
 	zathura \
+	zathura-pdf-mupdf \
+	
 
 # First install aur helper, if not installed 
 if [ ! -d "/opt/yay-git" ]; then 
