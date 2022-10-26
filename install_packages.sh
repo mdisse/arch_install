@@ -8,6 +8,7 @@ sudo pacman -Syu --noconfirm --needed \
 	ranger \
 	fzf \
 	jq \
+	zathura \
 
 # First install aur helper, if not installed 
 if [ ! -d "/opt/yay-git" ]; then 
