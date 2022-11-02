@@ -12,7 +12,7 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'lervag/vimtex'
 Plug 'itchyny/lightline.vim'
-Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
+Plug 'davidhalter/jedi-vim'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-eunuch'
 Plug 'scrooloose/nerdtree'
@@ -25,7 +25,3 @@ let g:pymode_warnings = 0
 let g:pymode_options_max_line_length = 250
 let g:tex_flavor = 'latex' 
 let g:vimtex_view_method ='zathura'
-let g:pymode_rope = 1
-let g:pymode_rope_completion = 1
-let g:pymode_rope_autoimport = 1
-let g:pymode_rope_complete_on_dot = 0
