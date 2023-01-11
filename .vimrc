@@ -36,6 +36,8 @@ Plug 'lervag/vimtex'
 Plug 'itchyny/lightline.vim'
 " python autocomplete
 Plug 'davidhalter/jedi-vim'
+" html autoclose tag 
+Plug 'alvan/vim-closetag'
 " never used
 Plug 'terryma/vim-multiple-cursors'
 " allows unix commands e.g. :SudoWrite
