@@ -6,6 +6,7 @@ set nu
 set noswf
 " auto syntax highlighting
 syntax on
+set background=dark
 " interactive search - highlights when searching
 set is
 " ignore case in search pattern
