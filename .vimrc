@@ -6,15 +6,6 @@ set nu
 set noswf
 " auto syntax highlighting
 syntax on
-" colorscheme and backgroud color
-set background=dark
-colorscheme solarized
-" history and deactivate gui colors - necessary for solarized
-hi Normal guibg=NONE ctermbg=NONE
-" set spelling language for corrections
-setlocal spell
-set spelllang=en_us
-" set spelllang=de
 " interactive search - highlights when searching
 set is
 " ignore case in search pattern
@@ -38,10 +29,6 @@ Plug 'itchyny/lightline.vim'
 Plug 'davidhalter/jedi-vim'
 " html autoclose tag 
 Plug 'alvan/vim-closetag'
-" never used
-Plug 'terryma/vim-multiple-cursors'
-" allows unix commands e.g. :SudoWrite
-Plug 'tpope/vim-eunuch'
 " good old nerdtree
 Plug 'scrooloose/nerdtree'
 " language correction
