@@ -10,6 +10,7 @@ sudo pacman -Syu --noconfirm --needed \
 	jq \
 	zathura \
 	zathura-pdf-mupdf \
+ 	powerline \
 	
 
 # First install aur helper, if not installed 
